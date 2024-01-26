@@ -1,0 +1,74 @@
+.container
+{
+    height: 800px;
+    width: 100vp;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+}
+.main
+{
+    height: 180px;
+    width: 500px;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+input
+{
+    width: 450px;
+    height: 40px;
+    margin-left: 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 17px;
+}
+button
+{
+    height: 32px;
+    width: 150px;
+    border-radius: 7px;
+    margin-top: 25px;
+    margin-left: 175px;
+}
+#spiner
+{
+    display: none;
+    height: 40px;
+    width: 40px;
+    margin-left: 230px;
+    margin-top: 5px;
+    border-radius: 50%;
+    border: 5px solid #000;
+    border-top: 5px solid #fff;
+    animation: loading linear infinite;
+    animation-duration: 2s;
+}
+img
+{
+    height: 200px;
+    width: 200px;
+    margin-left: 150px;
+    margin-top: 20px;
+    display: none;
+}
+.main-qr1
+{
+    height: max-content;
+    height: 500px;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+@keyframes loading
+{
+    from
+    {
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+    to
+    {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
